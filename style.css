@@ -24,18 +24,27 @@ header {
 }
 
 #nav {
+    float: left;
     width: 20%;
     background-color: #f4f4f4;
     padding: 1em;
 }
 
-#mid {
+#mid2 {
     width: 80%;
     padding: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
 }
+
+#mid1 {
+    clear: both;
+    width: 80%;
+    padding: 1em;
+    gap: 1em;
+    margin: 20px;
+} 
 
 .product {
     background-color: #fff;
