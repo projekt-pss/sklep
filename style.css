@@ -60,11 +60,11 @@ header {
 }
 
 .description {
-    display: none; /* Ukryta do czasu najechania */
+    display: none; 
 }
 
 .product:hover {
-    grid-column: span 2; /* Rozszerzenie na szerokość dwóch kolumn */
+    grid-column: span 2; 
 }
 
 .product:hover .description {
@@ -76,6 +76,39 @@ header {
     flex-direction: row;
     gap: 1em;
     align-items: center;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    margin: 10px;
+}
+
+#nav {
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+    #nav {
+        display: none; 
+    }
+
+    .menu {
+        display: inline-block;
+    }
+}
+
+
+@media (min-width: 601px) {
+    #nav {
+        display: block; 
+    }
+
+    .menu {
+        display: none;
+    }
 }
 
 footer {

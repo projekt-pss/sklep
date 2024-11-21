@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria Sklepu</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu");
+            const nav = document.querySelector("#nav");
+    
+            menuIcon.addEventListener("click", function () {
+                if (nav.style.display === "block") {
+                    nav.style.display = "none";
+                } else {
+                    nav.style.display = "block";
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 
 <header>
+
+    <img src="menu.png" alt="Menu" class="menu">
     <h1>Sprzęt</h1>
+    
 </header>
 
 <div class="container">
