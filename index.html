@@ -5,28 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria Sklepu</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuIcon = document.querySelector(".menu");
-            const nav = document.querySelector("#nav");
-    
-            menuIcon.addEventListener("click", function () {
-                if (nav.style.display === "block") {
-                    nav.style.display = "none";
-                } else {
-                    nav.style.display = "block";
-                }
-            });
-        });
-    </script>
 </head>
 <body>
-
 <header>
-
-    <img src="menu.png" alt="Menu" class="menu">
-    <h1>Opolskie Centrum Naprawczo-serwisowe</h1>
-    
+    <h1>Opolskie Centrum Naprawczo-Serwisowe</h1>
 </header>
 
 <div class="container">
@@ -39,88 +21,83 @@
     </div>
 
     <div id="mid1">
-        <h2>Usługi</h2><br>
-        <p> Oferujemy usługi takie jak:<br><br>
-            <ul>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-            </ul><br>
-            Wykonywane przez wykwalifikowanych zawodowców.
-        </p>
+        <h2>Usługi</h2>
+        <p>Oferujemy usługi takie jak:</p>
+        <ul>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+        </ul>
+        <p>Wykonywane przez wykwalifikowanych zawodowców.</p>
     </div>
 
     <div id="mid2">
-
-
-
-
-
-
-
-
-
-
-
-        <div class="product">
+        <input type="checkbox" id="product1" class="product-checkbox">
+        <label for="product1" class="product">
             <img src="zdjecie1.jpg" alt="Sprzęt 1">
-            <div class="info">
-                <h3>Sprzęt 1</h3><br>
-                <p class="description">Opis sprzętu 1.</p>
+            <h2>Sprzęt 1</h2>
+            <p class="short-description">Krótki opis produktu 1.</p>
+            <div class="expanded-description">
+                <p>Rozszerzony opis produktu 1. Szczegóły o jego funkcjach i zastosowaniach.</p>
             </div>
-        </div>
+        </label>
 
-        <div class="product">
+        <input type="checkbox" id="product2" class="product-checkbox">
+        <label for="product2" class="product">
             <img src="zdjecie2.jpg" alt="Sprzęt 2">
-            <div class="info">
-                <h3>Sprzęt 2</h3><br>
-                <p class="description">Opis sprzętu 2.</p>
+            <h2>Sprzęt 2</h2>
+            <p class="short-description">Krótki opis produktu 2.</p>
+            <div class="expanded-description">
+                <p>Rozszerzony opis produktu 2. Szczegóły techniczne i zalety.</p>
             </div>
-        </div>
+        </label>
 
-        <div class="product">
+        <input type="checkbox" id="product3" class="product-checkbox">
+        <label for="product3" class="product">
             <img src="zdjecie3.jpg" alt="Sprzęt 3">
-            <div class="info">
-                <h3>Sprzęt 3</h3><br>
-                <p class="description">Opis sprzętu 3.</p>
+            <h2>Sprzęt 3</h2>
+            <p class="short-description">Krótki opis produktu 3.</p>
+            <div class="expanded-description">
+                <p>Rozszerzony opis produktu 3. Szczegóły techniczne i zalety.</p>
             </div>
-        </div>
+        </label>
 
-        <div class="product">
+        <input type="checkbox" id="product4" class="product-checkbox">
+        <label for="product4" class="product">
             <img src="zdjecie4.jpg" alt="Sprzęt 4">
-            <div class="info">
-                <h3>Sprzęt 4</h3><br>
-                <p class="description">Opis sprzętu 4.</p>
+            <h2>Sprzęt 4</h2>
+            <p class="short-description">Krótki opis produktu 4.</p>
+            <div class="expanded-description">
+                <p>Rozszerzony opis produktu 4. Szczegóły techniczne i zalety.</p>
             </div>
-        </div>
+        </label>
 
-        <div class="product">
+        <input type="checkbox" id="product5" class="product-checkbox">
+        <label for="product5" class="product">
             <img src="zdjecie5.jpg" alt="Sprzęt 5">
-            <div class="info">
-                <h3>Sprzęt 5</h3><br>
-                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+            <h2>Sprzęt 5</h2>
+            <p class="short-description">Krótki opis produktu 5.</p>
+            <div class="expanded-description">
+                <p>Rozszerzony opis produktu 5. Szczegóły techniczne i zalety.</p>
             </div>
-        </div>
+        </label>
 
-        <div class="product">
+        <input type="checkbox" id="product6" class="product-checkbox">
+        <label for="product6" class="product">
             <img src="zdjecie6.jpg" alt="Sprzęt 6">
-            <div class="info">
-                <h3>Sprzęt 6</h3><br>
-                <p class="description">Opis sprzętu 6.</p>
+            <h2>Sprzęt 6</h2>
+            <p class="short-description">Krótki opis produktu 6.</p>
+            <div class="expanded-description">
+                <p>Rozszerzony opis produktu 6. Szczegóły techniczne i zalety.</p>
             </div>
-        </div>
-
-
-
-        
+        </label>
     </div>
 </div>
 
 <footer>
-    O kontakt prosimy pod nr. 000000000
+    <p>O kontakt prosimy pod nr. 000000000</p>
 </footer>
-
 </body>
 </html>
