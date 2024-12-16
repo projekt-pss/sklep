@@ -7,99 +7,94 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Opolskie Centrum Naprawczo-Serwisowe</h1>
-</header>
+    <header>
+        <div class="menu-toggle">&#9776;</div>
+        <h1>Opolskie Centrum Naprawczo-Serwisowe</h1>
+    </header>
 
-<div class="main">
-    <div id="nav">
-        <h2>Nawigacja</h2>
-        <ul>
-            <li>Sprzęt</li>
-            <li>Części</li>
-        </ul>
-    </div>
-
-    <div class="container">
-        <div id="mid1">
-            <h2>Usługi</h2>
-            <p>Oferujemy usługi takie jak:</p>
+    <div class="main">
+        <nav id="nav">
+            <h2>Nawigacja</h2>
             <ul>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
+                <li><a href="#">Sprzęt</a></li>
+                <li><a href="#">Części</a></li>
             </ul>
-            <p>Wykonywane przez wykwalifikowanych zawodowców.</p>
-        </div>
+        </nav>
 
-        <div id="mid2">
-            <input type="checkbox" id="product1" class="product-checkbox">
-            <label for="product1" class="product">
-                <img src="zdjecie1.jpg" alt="Sprzęt 1">
-                <h2>Sprzęt 1</h2>
-                <p class="short-description">Krótki opis produktu 1.</p>
-                <div class="expanded-description">
-                    <p>Rozszerzony opis produktu 1. Szczegóły o jego funkcjach i zastosowaniach.</p>
-                </div>
-            </label>
+        <div class="container">
+            <section id="mid1">
+                <h2>Usługi</h2>
+                <p>Oferujemy usługi takie jak:</p>
+                <ul>
+                    <li>Naprawy sprzętu elektronicznego</li>
+                    <li>Serwis komputerowy</li>
+                    <li>Sprzedaż części zamiennych</li>
+                    <li>Testowanie urządzeń</li>
+                    <li>Profesjonalne doradztwo</li>
+                </ul>
+                <p>Wykonywane przez wykwalifikowanych specjalistów.</p>
+            </section>
 
-            <input type="checkbox" id="product2" class="product-checkbox">
-            <label for="product2" class="product">
-                <img src="zdjecie2.jpg" alt="Sprzęt 2">
-                <h2>Sprzęt 2</h2>
-                <p class="short-description">Krótki opis produktu 2.</p>
-                <div class="expanded-description">
-                    <p>Rozszerzony opis produktu 2. Szczegóły techniczne i zalety.</p>
-                </div>
-            </label>
-
-            <input type="checkbox" id="product3" class="product-checkbox">
-            <label for="product3" class="product">
-                <img src="zdjecie3.jpg" alt="Sprzęt 3">
-                <h2>Sprzęt 3</h2>
-                <p class="short-description">Krótki opis produktu 3.</p>
-                <div class="expanded-description">
-                    <p>Rozszerzony opis produktu 3. Szczegóły techniczne i zalety.</p>
-                </div>
-            </label>
-
-            <input type="checkbox" id="product4" class="product-checkbox">
-            <label for="product4" class="product">
-                <img src="zdjecie4.jpg" alt="Sprzęt 4">
-                <h2>Sprzęt 4</h2>
-                <p class="short-description">Krótki opis produktu 4.</p>
-                <div class="expanded-description">
-                    <p>Rozszerzony opis produktu 4. Szczegóły techniczne i zalety.</p>
-                </div>
-            </label>
-
-            <input type="checkbox" id="product5" class="product-checkbox">
-            <label for="product5" class="product">
-                <img src="zdjecie5.jpg" alt="Sprzęt 5">
-                <h2>Sprzęt 5</h2>
-                <p class="short-description">Krótki opis produktu 5.</p>
-                <div class="expanded-description">
-                    <p>Rozszerzony opis produktu 5. Szczegóły techniczne i zalety.</p>
-                </div>
-            </label>
-
-            <input type="checkbox" id="product6" class="product-checkbox">
-            <label for="product6" class="product">
-                <img src="zdjecie6.jpg" alt="Sprzęt 6">
-                <h2>Sprzęt 6</h2>
-                <p class="short-description">Krótki opis produktu 6.</p>
-                <div class="expanded-description">
-                    <p>Rozszerzony opis produktu 6. Szczegóły techniczne i zalety.</p>
-                </div>
-            </label>
+            <section id="mid2">
+                <input type="checkbox" id="product1" class="product-checkbox">
+                <label for="product1" class="product">
+                    <img src="zdjecie1.jpg" alt="Sprzęt 1">
+                    <h2>Sprzęt 1</h2>
+                    <p class="short-description">Krótki opis produktu 1.</p>
+                    <p class="expanded-description">Pełny opis produktu 1 z dodatkowymi szczegółami.</p>
+                </label>
+                <input type="checkbox" id="product2" class="product-checkbox">
+                <label for="product2" class="product">
+                    <img src="zdjecie2.jpg" alt="Sprzęt 2">
+                    <h2>Sprzęt 2</h2>
+                    <p class="short-description">Krótki opis produktu 2.</p>
+                    <p class="expanded-description">Pełny opis produktu 2 z dodatkowymi szczegółami.</p>
+                </label>
+                <input type="checkbox" id="product3" class="product-checkbox">
+                <label for="product3" class="product">
+                    <img src="zdjecie3.jpg" alt="Sprzęt 3">
+                    <h2>Sprzęt 3</h2>
+                    <p class="short-description">Krótki opis produktu 3.</p>
+                    <p class="expanded-description">Pełny opis produktu 3 z dodatkowymi szczegółami.</p>
+                </label>
+                <input type="checkbox" id="product4" class="product-checkbox">
+                <label for="product4" class="product">
+                    <img src="zdjecie4.jpg" alt="Sprzęt 4">
+                    <h2>Sprzęt 4</h2>
+                    <p class="short-description">Krótki opis produktu 4.</p>
+                    <p class="expanded-description">Pełny opis produktu 4 z dodatkowymi szczegółami.</p>
+                </label>
+                <input type="checkbox" id="product5" class="product-checkbox">
+                <label for="product5" class="product">
+                    <img src="zdjecie5.jpg" alt="Sprzęt 5">
+                    <h2>Sprzęt 5</h2>
+                    <p class="short-description">Krótki opis produktu 5.</p>
+                    <p class="expanded-description">Pełny opis produktu 5 z dodatkowymi szczegółami.</p>
+                </label>
+                <input type="checkbox" id="product6" class="product-checkbox">
+                <label for="product6" class="product">
+                    <img src="zdjecie6.jpg" alt="Sprzęt 6">
+                    <h2>Sprzęt 6</h2>
+                    <p class="short-description">Krótki opis produktu 6.</p>
+                    <p class="expanded-description">Pełny opis produktu 6 z dodatkowymi szczegółami.</p>
+                </label>
+            </section>
         </div>
     </div>
-</div>
 
-<footer>
-    <p>O kontakt prosimy pod nr. 000000000</p>
-</footer>
+    <footer>
+        O kontakt prosimy pod nr: 000000000
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("#nav");
+
+            menuToggle.addEventListener("click", function () {
+                nav.classList.toggle("visible");
+            });
+        });
+    </script>
 </body>
 </html>
