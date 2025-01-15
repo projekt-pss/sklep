@@ -23,13 +23,23 @@ header {
 .main {
     display: flex;
     flex: 1;
+    flex-wrap: wrap; /* Umożliwia zawijanie elementów, jeśli brak miejsca */
 }
 
 #nav {
     width: 15%;
     background-color: #f4f4f4;
     padding: 1em;
-    height: 80vh;
+    min-height: 80vh;
+}
+
+/* Responsywność na węższych ekranach */
+@media (max-width: 768px) {
+    #nav {
+        width: 100%; /* Nawigacja zajmuje całą szerokość na małych ekranach */
+        order: 1; /* Nawigacja przechodzi na początek */
+        text-align: center;
+    }
 }
 
 .container {
@@ -40,6 +50,7 @@ header {
 
 #mid1 {
     padding: 1em;
+    margin: 3%;
 }
 
 #mid2 {
@@ -49,7 +60,6 @@ header {
     padding: 1em;
 }
 
-/* Produkt */
 .product {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -74,37 +84,18 @@ header {
     text-align: center;
 }
 
+/* Nawigacja produktów */
 .product-checkbox {
     display: none;
 }
 
-/* Zachowanie dla wybranego produktu */
 .product-checkbox:checked + .product {
-    grid-column: 1 / -1; /* Rozciąga produkt na całą szerokość */
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     align-items: flex-start;
-    height: 60vh; /* Powiększenie wysokości */
-}
-
-/* Ustawienie dla wybranego produktu na dużych ekranach */
-@media (min-width: 1024px) {
-    #mid2 {
-        grid-template-columns: repeat(4, 1fr); /* 4 kolumny na dużych ekranach */
-    }
-
-    .product-checkbox:checked + .product {
-        grid-column: 1 / 2; /* Produkt przesuwa się na lewą stronę */
-        height: auto;
-    }
-}
-
-/* Małe ekrany */
-@media (max-width: 768px) {
-    .product-checkbox:checked + .product {
-        height: 50vh; /* Powiększenie produktu tylko na wysokość */
-    }
+    height: 60vh;
 }
 
 .short-description {
@@ -130,6 +121,7 @@ header {
     text-align: left;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -137,4 +129,30 @@ footer {
     padding: 1em;
     height: 10vh;
     width: 100%;
+}
+
+/* Responsywność */
+@media (max-width: 1024px) {
+    #nav {
+        width: 25%; /* Zmniejszona szerokość na średnich ekranach */
+    }
+
+    .container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Kontener zajmuje pełną szerokość */
+    }
+
+    #mid2 {
+        grid-template-columns: 1fr; /* Jeden produkt na wiersz */
+    }
+
+    footer {
+        height: auto; /* Dynamiczna wysokość */
+        padding: 1.5em;
+    }
 }

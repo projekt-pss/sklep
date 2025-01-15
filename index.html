@@ -16,38 +16,61 @@
         <nav id="nav">
             <h2>Nawigacja</h2>
             <ul>
-                <li><a href="#">Sprzęt</a></li>
-                <li><a href="#">Części</a></li>
+                <li><a href="#mid1">Usługi</a></li>
+                <li><a href="#gallery">Galeria</a></li>
             </ul>
         </nav>
 
         <div class="container">
             <section id="mid1">
-                <h2>Usługi</h2>
-                <p>Oferujemy usługi takie jak:</p>
+                <h2>O nas</h2>
+                <p>
+                    naszą działalność rozpoczęliśmy od świadczenia usług poprawkowych po innych firmach i serwisach.
+                    Teraz jesteśmy firmą z paroletnim doświadczeniem, zajmujemy się usługami dla firm i gospodarstw domowych z zakresu sprzątania, remontów, napraw i serwisów urządzeń.
+                    Zaufało nam już wiele firm i osób prywatnych dla których wykonywaliśmy i nadal wykonujemy zlecenia takie jak:
+                </p>
                 <ul>
-                    <li>Naprawy sprzętu elektronicznego</li>
-                    <li>Serwis komputerowy</li>
-                    <li>Sprzedaż części zamiennych</li>
-                    <li>Testowanie urządzeń</li>
-                    <li>Profesjonalne doradztwo</li>
+                    <li>Naprawy i stawianie instalacji elektrycznych i oświetlenia</li>
+                    <li>Czyszczenie kostki i elewacji</li>
+                    <li>Czyszczenie i pranie wnętrz pojazdów</li>
+                    <li>Montaż i naprawa urządzeń gastronomicznych</li>
+                    <li>Montaż i naprawa instalacji wodnych oraz kanalizacyjnych</li>
+                    <li>Pranie tapicerki meblowej i wykładzin</li>
+                    <li>Sprzątanie i osuszanie pomieszczeń</li>
+                    <li>Pogwarancyjna naprawa urządzeń</li>
                 </ul>
-                <p>Wykonywane przez wykwalifikowanych specjalistów.</p>
             </section>
 
-            
+            <section id="gallery">
+                <h2>Galeria</h2>
+                <div class="gallery-grid">
+                    <img src="zdj/img1.jpg" alt="Zdjęcie 1">
+                    <img src="zdj/img2.jpg" alt="Zdjęcie 2">
+                    <img src="zdj/img3.jpg" alt="Zdjęcie 3">
+                    <img src="zdj/img4.jpg" alt="Zdjęcie 4">
+                    <img src="zdj/img5.jpg" alt="Zdjęcie 5">
+                    <img src="zdj/img6.jpg" alt="Zdjęcie 6">
+                    <img src="zdj/img7.jpg" alt="Zdjęcie 7">
+                    <img src="zdj/img8.jpg" alt="Zdjęcie 8">
+                    <img src="zdj/img9.jpg" alt="Zdjęcie 9">
+                </div>
+            </section>
         </div>
     </div>
 
     <footer>
-        O kontakt prosimy pod nr: 000000000
+        O kontakt prosimy pod nr: 609169637.
     </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // Wyświetlenie alertu po załadowaniu strony
+            alert("Strona w trakcie przebudowy - przepraszamy za wszelkie niedogodności");
+
             const menuToggle = document.querySelector(".menu-toggle");
             const nav = document.querySelector("#nav");
 
+            // Obsługa menu toggle
             menuToggle.addEventListener("click", function () {
                 nav.classList.toggle("visible");
             });
