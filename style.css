@@ -79,6 +79,20 @@ h1 {
     #nav.visible {
         display: block; /* Widoczne po kliknięciu przycisku menu */
     }
+
+    /* Przenoszenie logo nad sekcję "O nas" */
+    .logo {
+        position: static;
+        margin: 0 auto 1em;
+        height: auto;
+        transform: none;
+        text-align: center;
+    }
+
+    .logo img {
+        height: auto;
+        max-width: 60%; /* Logo mniejsze na małych ekranach */
+    }
 }
 
 /* Stylizacja nawigacji */
