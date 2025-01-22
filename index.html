@@ -8,9 +8,13 @@
 </head>
 <body>
     <header>
+        <a href="zdj/logo.jpg" class="logo">
+            <img src="zdj/logo.jpg" alt="Logo">
+        </a>
         <div class="menu-toggle">&#9776;</div>
         <h1>Opolskie Centrum Naprawczo-Serwisowe</h1>
     </header>
+    
 
     <div class="main">
         <nav id="nav">
@@ -62,19 +66,46 @@
         O kontakt prosimy pod nr: 609169637.
     </footer>
 
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Wyświetlenie alertu po załadowaniu strony
-            alert("Strona w trakcie przebudowy - przepraszamy za wszelkie niedogodności");
+    document.addEventListener("DOMContentLoaded", function () {
+        // Wyświetlenie alertu po załadowaniu strony
+        alert("Strona w trakcie przebudowy - przepraszamy za wszelkie niedogodności");
 
-            const menuToggle = document.querySelector(".menu-toggle");
-            const nav = document.querySelector("#nav");
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("#nav");
 
-            // Obsługa menu toggle
-            menuToggle.addEventListener("click", function () {
-                nav.classList.toggle("visible");
+        // Obsługa menu toggle
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("visible");
+        });
+
+        // Funkcjonalność powiększania obrazów
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const close = document.querySelector(".close");
+
+        document.querySelectorAll(".gallery-grid img").forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "flex";
+                modalImage.src = this.src;
             });
         });
+
+        close.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
     </script>
 </body>
 </html>
