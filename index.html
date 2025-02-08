@@ -8,14 +8,13 @@
 </head>
 <body>
     <header>
-        <a href="zdj/logo.jpg" class="logo">
-            <img src="zdj/logo.jpg" alt="Logo">
+        <a href="zdj/logo.png" class="logo">
+            <img src="zdj/logo.png" alt="Logo">
         </a>
         <div class="menu-toggle">&#9776;</div>
         <h1>Opolskie Centrum Naprawczo-Serwisowe</h1>
     </header>
     
-
     <div class="main">
         <nav id="nav">
             <h2>Nawigacja</h2>
@@ -27,6 +26,9 @@
 
         <div class="container">
             <section id="mid1">
+                <!-- Logo, które pojawi się tylko na małych ekranach -->
+                <img src="zdj/logo.jpg" alt="Logo" class="mobile-logo">
+                
                 <h2>O nas</h2>
                 <p>
                     naszą działalność rozpoczęliśmy od świadczenia usług poprawkowych po innych firmach i serwisach.
@@ -65,11 +67,6 @@
     <footer>
         O kontakt prosimy pod nr: 609169637.
     </footer>
-
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
